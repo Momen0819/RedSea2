@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 ie-all" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]><html class="ie9 ie-all" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 10]><html class="ie10 ie-all" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if !IE]><!-->
+<!--<![endif]-->
+<html>
+
+<head>
+    <title>
+         Red Sea Company
+    </title>
+    <!-- Css Files -->
+    <link href="css\bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css\font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css\owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css\owl.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css\style.min.css" rel="stylesheet" type="text/css">
+    <link href="css\reset.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .logo {
+            float: right;
+            text-align: center !important;
+            padding-right: 20px;
+        }
+
+        .top-nav ul li a i {
+            color: #0c74bb !important;
+            margin-left: 3PX;
+        }
+
+        .top-nav ul li a:hover {
+            color: #0c74bb !important;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .slider-box .main-slider .slider-item .slider-item-caption a:hover {
+            background-color: #0c74bb !important;
+        }
+
+        .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+            background-color: #0c74bb !important;
+        }
+
+        header .bottom-nav {
+            background-image: url(images/header-explo2.png) !important;
+            background-color: #fff;
+            background-position: -103px 7px;
+        }
+
+        .navigation {
+            background-image: url(images/headerbj2.png);
+            background-repeat: repeat-x;
+            border-radius: 15px;
+            direction: rtl;
+            margin-top: 25px;
+            padding: 0 30px;
+        }
+
+        footer .footer-box .footer-box-bottom {
+            background-image: url(images/header-explo2.png);
+            background-position: 0 85px;
+        }
+
+        .navigation ul li a:hover {
+            color: black !important;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .loader {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -25px 0 0 -25px;
+            font-size: 10px;
+            text-indent: -12345px;
+            border-top: 2px solid rgba(0, 0, 0, .08);
+            border-right: 2px solid rgba(0, 0, 0, .08);
+            border-bottom: 2px solid rgba(0, 0, 0, .08);
+            border-left: 2px solid #0c74bb !important;
+            border-radius: 50%;
+            -webkit-animation: spinner 700ms infinite linear;
+            animation: spinner 700ms infinite linear;
+            z-index: 100001;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+        .slider-box .main-slider .slider-item {
+            background: -webkit-linear-gradient(right bottom, lightgray, lightgray) !important;
+            background: linear-gradient(right bottom, #8ece54, #c4f47a);
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+
+        .news-letter .news-box .news-box-left input[type=button] {
+            background-color: #0c74bb;
+            border: 0;
+            padding: 0 30px;
+            border-radius: 20px;
+            display: inline-block;
+            height: 45px;
+            color: #fff;
+            font-size: 17px;
+            outline: 0;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .news-letter .news-box .news-box-left input[type=submit] {
+            background-color: #0c74bb;
+            border: 0;
+            padding: 0 30px;
+            border-radius: 20px;
+            display: inline-block;
+            height: 45px;
+            color: #fff;
+            font-size: 17px;
+            outline: 0;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+            .news-letter .news-box .news-box-left input[type=button]:hover {
+                background-color: #0c74bb;
+                border: 0;
+                padding: 0 30px;
+                border-radius: 20px;
+                display: inline-block;
+                height: 45px;
+                color: #fff;
+                font-size: 17px;
+                outline: 0;
+                -webkit-transition: all .4s;
+                transition: all .4s;
+            }
+
+        .news-letter .news-box .news-box-left input[type=submit]:hover {
+            background-color: #0c74bb;
+            border: 0;
+            padding: 0 30px;
+            border-radius: 20px;
+            display: inline-block;
+            height: 45px;
+            color: #fff;
+            font-size: 17px;
+            outline: 0;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .mobile-nav {
+            background-image: url(images/headerbj2.png) !important;
+            background-repeat: repeat-x;
+            border-radius: 15px;
+            direction: rtl;
+            margin-top: 25px;
+        }
+
+            .mobile-nav .nav-list {
+                background-image: url(images/headerbj2.png);
+                background-repeat: repeat;
+                text-align: center;
+                border-top: 1px solid #fff;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                display: none;
+            }
+
+        @media (max-width: 991px) {
+            footer .footer-box .footer-box-bottom .footer-box-bottom-left, footer .footer-box .footer-box-bottom .footer-box-bottom-right {
+                width: 100%;
+            }
+        }
+
+        .st-menu .close-nav {
+            position: absolute;
+            right: 0;
+            top: 26px;
+            background: #0c74bb;
+            padding: 12px 15px;
+            color: #fff;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            cursor: pointer;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .st-menu .close-nav:hover {
+            position: absolute;
+            right: 0;
+            top: 26px;
+            background: #0c74bb;
+            padding: 12px 15px;
+            color: #fff;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            cursor: pointer;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .st-menu ul li a:hover {
+            background: #0c74bb;
+            box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+            color: #fff;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 45px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+
+
+            .float:hover {
+                color: white !important;
+            }
+
+        .my-float:hover {
+            color: white !important;
+        }
+
+        .copy2 .opinion {
+            position: fixed;
+            width: 50px;
+            bottom: 100px;
+            right: 45px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.5s ease-in-out;
+            z-index: 9999;
+        }
+
+        .opinions {
+            background-color: #fff;
+            border: 1px solid;
+            width: 25%;
+            position: fixed;
+            bottom: 160px;
+            right: 50px;
+            width: 280px;
+            border-radius: 5px;
+            border-bottom: 2px solid #ddd;
+            padding: 10px;
+            z-index: 999999;
+        }
+
+        .products .products-box .block .block-inner:hover .block-cart a {
+            background-color: #0c74bb;
+            color:white;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+        .products .products-box .block .block-inner:hover .block-data a {
+            color: #0c74bb;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <div class="wrapper st-container" id="st-container">
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+
+            <nav class="st-menu st-effect-8" id="menu-8">
+                <span class="close-nav" title="Close">
+                    <i class="fa fa-times"></i>
+                </span>
+                <h2 class="icon icon-stack">
+                    <img src="images\Logo2.png" class="img-responsive">
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">الصفحة الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#"> المنتجات</a>
+                    </li>
+                    <li>
+                        <a href="#"> العروض</a>
+                    </li>
+                    <li>
+                        <a href="#">عن الشركة</a>
+                    </li>
+                    <li>
+                        <a href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="st-content">
+                <section class="header">
+                    <h1 class="empty-head">####</h1>
+                    <header>
+                        <div class="container">
+                            <div class="top-nav col-xs-12">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-phone"></i> 01117076168 - 01102119335 - 01117073353 - 01157777837
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:Info@redseaforpackingandsupplies.com">
+                                            <i class="fa fa-envelope"></i> Info@redseaforpackingandsupplies.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-map-marker"></i> 
+                                            شارع عباس العقاد مدينة نصر
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end top-nav -->
+                            <div class="bottom-nav col-xs-12">
+                                <div class="logo-box col-xs-12">
+                                    <div class="logo col-md-12 col-xs-12">
+                                        <a href="#" title="Red Sea Company">
+                                            <img src="images\Logo2.png" alt="logo of the site" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end logo-box -->
+                                <div class="navigation col-xs-12">
+                                    <ul>
+                                        <li>
+                                            <a href="#">الصفحة الرئيسية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> المنتجات</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> العروض</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">عن الشركة</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">تواصل معنا</a>
+                                        </li>
+                                        <li>
+                                            <div id="st-trigger-effects" class="column">
+                                                <button data-effect="st-effect-8" class="st_show">
+                                                    <i class="fa fa-bars"></i>
+                                                </button>
+                                            </div>
+                                            <!-- /.st-trigger -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end navigation -->
+                                <div class="mobile-nav col-xs-12">
+                                    <div class="open-nav">
+                                        <a>
+                                            <i class="fa fa-bars"></i>
+                                            <span>
+
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- end open-nav -->
+                                    <div class="nav-list col-xs-12">
+                                        <ul>
+                                            <li>
+                                                <a href="#">الصفحة الرئيسية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> المنتجات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> العروض</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">عن الشركة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">تواصل معنا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end nav-list -->
+                                </div>
+                                <!-- end mobile-nav -->
+                            </div>
+                            <!-- end bottom-nav -->
+                        </div>
+                        <!-- end container -->
+                    </header>
+                </section>
+
+                <!-- end header -->
+                <section class="products">
+                    <div class="container">
+                        <div class="products-head col-xs-12">
+                            <div class="products-head-right col-md-12 col-xs-12 pull-right text-center">
+                                <h1 style="    font-size: 25px;color:#0c74bb"> عروضنا
+</h1>
+                                <p>
+                                    تعرف على أحدث عروضنا على الإنترنت واحصل عليها!
+                                    نقوم دائماً بتحديث هذا القسم لذلك ننصح بزيارة موقعنا باستمرار للتعرف على أحدث العروض
+
+                                </p>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                        <!-- end products-head -->
+                        <div class="products-box col-xs-12">
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+                            <!-- end block -->
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+
+                            <div class="block  col-md-6 col-sm-6 col-xs-6 pull-right weekly">
+                                <div class="block-inner">
+                                    <div class="block-img">
+                                        <img src="images\download.jpg" style="width: 500px;" class="img-responsive" alt="">
+                                    </div>
+                                    <!-- end block-img -->
+                                    <div class="block-data">
+                                        <a href="#">
+                                            احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة
+                                        </a>
+                                    </div>
+                                    <div class="block-cart">
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                        احصل على ضعف نقاط الولاء وقسيمة شراء من الموزع بقيمة 5 فى المئة<br />
+                                    </div>
+                                    <!-- end block-cart -->
+                                </div>
+                                <!-- end block-inner -->
+                            </div>
+
+
+                            <!-- end block -->
+                        </div>
+                        <!-- end products-box -->
+                    </div>
+                    <!-- end container -->
+                </section>
+
+                <section class="footer">
+                    <footer>
+                        <div class="container">
+                            <div class="footer-box col-xs-12">
+                                <div class="footer-box-bottom col-xs-12">
+                                    <div class="footer-box-bottom-inner col-xs-12">
+                                        <div class="footer-box-bottom-left col-md-12 col-xs-12 text-center">
+                                            <h1>تابعنا علي الشبكات الاجتماعية</h1>
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="facebook">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="twitter">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="google-plus">
+                                                        <i class="fa fa-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end footer-box-bottom-inner -->
+                                    <div class="footer-box-bottom-copyrights col-xs-12 text-center">
+                                        <h1>© 2020   | تصميم وتطوير شركة <a href="http://pixels-eg.com/" target="_blank" style="color:#0c74bb">Pixels Egypt</a></h1>
+                                    </div>
+                                    <!-- end footer-box-bottom-copyrights -->
+                                </div>
+                                <!-- end footer-box-bottom -->
+                            </div>
+                            <!-- end footer-box -->
+                        </div>
+                        <!-- end container -->
+                    </footer>
+                </section>
+                <!-- end footer -->
+            </div>
+            <!-- end st-content -->
+        </div>
+        <!-- end st-pusher -->
+    </div>
+    <!-- end wrapper -->
+
+
+    <div class="toTop col-xs-12 text-center">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=&amp;text=السلام عليكم أريد الأستفسار عن " class="float" target="_blank">
+        <img class="my-float" style="margin: 5px 0 0 3px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACP0lEQVRIS+WW8TEmQRDFfyJwIkAERwSIABE4ERwRIAJEgAgQASK4uwicCBAB9VPTX435Znbn849SukpZtndev9eve3eOT4q5T8LlywH/AH4mtf4BT7MqNwvjdWAH2AIEzkPgK+AWuOgpogd4BTgGBI64Kw5fy/4WfB/4O1TAGLBgl4nhA3CYmNWkVQnvRwt2gfMW+BCwoDfpwVNgr0fClKdCRhO8BbwE/ElMBytvFCN7lTJWa7K3gDXKJpAzDSeX/W0JoUIyt+cbZVINWDPJ1p56bT8Fvf+AAoJqvCnVasAnwO/kTK+NqN7rKoMRya/TGE7SasD/gUVgGfDa0K0H2eHVvjXAVewFWMjv14BNUmYNFpEznqp+xO0hd05kalfby0dAA+ULw//Lfr5oQc+EhVE1mEW8RclYlpqoBM77rHQeMriZsoq6gM1XatkpTRluIvd1Ce7curEcv3KrdUktUJhLM9RWY4Cb67WM/G07zD8CYhqCyHP5Yukdp5J5jFytx7n5YoP5xvo15upYIDJ3bFrvWs2n291wETLz/9H/UG87KTNJbK1MH7Rn75zYsLASW6zhc1FojGDNqM1PHx92dFp9HhsjZT0DSgUGGYfUftIEkzDOGKD38y0302sxJNKt9sieWYDXurc2MhZmrwV1F8hU1p5RjVqPY+7yBzxI6SNsRRgo77H37anFz/zp4wIRyAL8CeYy8UBHxJdIHu52c1VkshaH+lIytnoBetaheeb35E7VMPax12OmD+V8P+BXQiqNH8w4RhEAAAAASUVORK5CYII=">
+    </a>
+
+    <div class="copy2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="images/happy_ico_02.png" class="opinion" onclick="ShowDiv()">
+                    <div class="opinions display2" id="DivSatisfaction" style="display:none">
+                        <h5 style="color:#ef4826;text-align:center">  مؤشر رضى الزوار</h5>
+                        <a href="#" onclick="SelectSatesfaction(1)">
+                            <img src="images/hf_01.png">
+                        </a>
+                        <a href="#" onclick="SelectSatesfaction(2)">
+                            <img src="images/hf_02.png">
+                        </a>
+                        <a href="#" onclick="SelectSatesfaction(3)">
+                            <img src="images/hf_03.png">
+                        </a>
+                        <a href="#" onclick="SelectSatesfaction(4)">
+                            <img src="images/hf_04.png">
+                        </a>
+                        <a href="#" onclick="SelectSatesfaction(5)">
+                            <img src="images/hf_05.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.toTop -->
+
+    <!-- Javascript Files -->
+    <script src="js\jquery-2.2.2.min.js" type="text/javascript"></script>
+    <script src="js\bootstrap.min.js" type="text/javascript"></script>
+    <script src="js\modernizr.min.js" type="text/javascript"></script>
+    <script src="js\owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js\placeholdem.min.js" type="text/javascript"></script>
+    <script src="js\toucheffects.js" type="text/javascript"></script>
+    <script src="js\jquery.mixitup.js" type="text/javascript"></script>
+    <script src="js\classie.js" type="text/javascript"></script>
+    <script src="js\jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js\script.js" type="text/javascript"></script>
+    <script>
+
+        function ShowDiv() {
+            if ($("#DivSatisfaction").is(":visible")) {
+                $("#DivSatisfaction").hide('slow');
+            }
+            else {
+                $("#DivSatisfaction").show('slow');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
